@@ -1,0 +1,343 @@
+﻿/*
+    Author: André Luiz Rabêllo
+
+    Overlay progress indicator (centered text)
+*/
+.overlay-progress {
+  background: #d2d6de;
+  border-radius: 1px;
+  font-size: 12px;
+  height: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  position: relative;
+  overflow: hidden;
+}
+.overlay-progress:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 1px;
+  float: left;
+  height: 100%;
+  width: 0;
+  transition: width 0.5s ease 0s;
+}
+.overlay-progress:after {
+  content: attr(data-progress) "%";
+  opacity: 0;
+  position: absolute;
+  right: 5px;
+  transition: opacity 0.3s ease 0s;
+}
+.overlay-progress:hover:after {
+  opacity: 1;
+}
+.overlay-progress .description {
+  padding: 0 35px;
+  position: absolute;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+.overlay-progress[data-progress="1"]:before {
+  width: 1%;
+}
+.overlay-progress[data-progress="2"]:before {
+  width: 2%;
+}
+.overlay-progress[data-progress="3"]:before {
+  width: 3%;
+}
+.overlay-progress[data-progress="4"]:before {
+  width: 4%;
+}
+.overlay-progress[data-progress="5"]:before {
+  width: 5%;
+}
+.overlay-progress[data-progress="6"]:before {
+  width: 6%;
+}
+.overlay-progress[data-progress="7"]:before {
+  width: 7%;
+}
+.overlay-progress[data-progress="8"]:before {
+  width: 8%;
+}
+.overlay-progress[data-progress="9"]:before {
+  width: 9%;
+}
+.overlay-progress[data-progress="10"]:before {
+  width: 10%;
+}
+.overlay-progress[data-progress="11"]:before {
+  width: 11%;
+}
+.overlay-progress[data-progress="12"]:before {
+  width: 12%;
+}
+.overlay-progress[data-progress="13"]:before {
+  width: 13%;
+}
+.overlay-progress[data-progress="14"]:before {
+  width: 14%;
+}
+.overlay-progress[data-progress="15"]:before {
+  width: 15%;
+}
+.overlay-progress[data-progress="16"]:before {
+  width: 16%;
+}
+.overlay-progress[data-progress="17"]:before {
+  width: 17%;
+}
+.overlay-progress[data-progress="18"]:before {
+  width: 18%;
+}
+.overlay-progress[data-progress="19"]:before {
+  width: 19%;
+}
+.overlay-progress[data-progress="20"]:before {
+  width: 20%;
+}
+.overlay-progress[data-progress="21"]:before {
+  width: 21%;
+}
+.overlay-progress[data-progress="22"]:before {
+  width: 22%;
+}
+.overlay-progress[data-progress="23"]:before {
+  width: 23%;
+}
+.overlay-progress[data-progress="24"]:before {
+  width: 24%;
+}
+.overlay-progress[data-progress="25"]:before {
+  width: 25%;
+}
+.overlay-progress[data-progress="26"]:before {
+  width: 26%;
+}
+.overlay-progress[data-progress="27"]:before {
+  width: 27%;
+}
+.overlay-progress[data-progress="28"]:before {
+  width: 28%;
+}
+.overlay-progress[data-progress="29"]:before {
+  width: 29%;
+}
+.overlay-progress[data-progress="30"]:before {
+  width: 30%;
+}
+.overlay-progress[data-progress="31"]:before {
+  width: 31%;
+}
+.overlay-progress[data-progress="32"]:before {
+  width: 32%;
+}
+.overlay-progress[data-progress="33"]:before {
+  width: 33%;
+}
+.overlay-progress[data-progress="34"]:before {
+  width: 34%;
+}
+.overlay-progress[data-progress="35"]:before {
+  width: 35%;
+}
+.overlay-progress[data-progress="36"]:before {
+  width: 36%;
+}
+.overlay-progress[data-progress="37"]:before {
+  width: 37%;
+}
+.overlay-progress[data-progress="38"]:before {
+  width: 38%;
+}
+.overlay-progress[data-progress="39"]:before {
+  width: 39%;
+}
+.overlay-progress[data-progress="40"]:before {
+  width: 40%;
+}
+.overlay-progress[data-progress="41"]:before {
+  width: 41%;
+}
+.overlay-progress[data-progress="42"]:before {
+  width: 42%;
+}
+.overlay-progress[data-progress="43"]:before {
+  width: 43%;
+}
+.overlay-progress[data-progress="44"]:before {
+  width: 44%;
+}
+.overlay-progress[data-progress="45"]:before {
+  width: 45%;
+}
+.overlay-progress[data-progress="46"]:before {
+  width: 46%;
+}
+.overlay-progress[data-progress="47"]:before {
+  width: 47%;
+}
+.overlay-progress[data-progress="48"]:before {
+  width: 48%;
+}
+.overlay-progress[data-progress="49"]:before {
+  width: 49%;
+}
+.overlay-progress[data-progress="50"]:before {
+  width: 50%;
+}
+.overlay-progress[data-progress="51"]:before {
+  width: 51%;
+}
+.overlay-progress[data-progress="52"]:before {
+  width: 52%;
+}
+.overlay-progress[data-progress="53"]:before {
+  width: 53%;
+}
+.overlay-progress[data-progress="54"]:before {
+  width: 54%;
+}
+.overlay-progress[data-progress="55"]:before {
+  width: 55%;
+}
+.overlay-progress[data-progress="56"]:before {
+  width: 56%;
+}
+.overlay-progress[data-progress="57"]:before {
+  width: 57%;
+}
+.overlay-progress[data-progress="58"]:before {
+  width: 58%;
+}
+.overlay-progress[data-progress="59"]:before {
+  width: 59%;
+}
+.overlay-progress[data-progress="60"]:before {
+  width: 60%;
+}
+.overlay-progress[data-progress="61"]:before {
+  width: 61%;
+}
+.overlay-progress[data-progress="62"]:before {
+  width: 62%;
+}
+.overlay-progress[data-progress="63"]:before {
+  width: 63%;
+}
+.overlay-progress[data-progress="64"]:before {
+  width: 64%;
+}
+.overlay-progress[data-progress="65"]:before {
+  width: 65%;
+}
+.overlay-progress[data-progress="66"]:before {
+  width: 66%;
+}
+.overlay-progress[data-progress="67"]:before {
+  width: 67%;
+}
+.overlay-progress[data-progress="68"]:before {
+  width: 68%;
+}
+.overlay-progress[data-progress="69"]:before {
+  width: 69%;
+}
+.overlay-progress[data-progress="70"]:before {
+  width: 70%;
+}
+.overlay-progress[data-progress="71"]:before {
+  width: 71%;
+}
+.overlay-progress[data-progress="72"]:before {
+  width: 72%;
+}
+.overlay-progress[data-progress="73"]:before {
+  width: 73%;
+}
+.overlay-progress[data-progress="74"]:before {
+  width: 74%;
+}
+.overlay-progress[data-progress="75"]:before {
+  width: 75%;
+}
+.overlay-progress[data-progress="76"]:before {
+  width: 76%;
+}
+.overlay-progress[data-progress="77"]:before {
+  width: 77%;
+}
+.overlay-progress[data-progress="78"]:before {
+  width: 78%;
+}
+.overlay-progress[data-progress="79"]:before {
+  width: 79%;
+}
+.overlay-progress[data-progress="80"]:before {
+  width: 80%;
+}
+.overlay-progress[data-progress="81"]:before {
+  width: 81%;
+}
+.overlay-progress[data-progress="82"]:before {
+  width: 82%;
+}
+.overlay-progress[data-progress="83"]:before {
+  width: 83%;
+}
+.overlay-progress[data-progress="84"]:before {
+  width: 84%;
+}
+.overlay-progress[data-progress="85"]:before {
+  width: 85%;
+}
+.overlay-progress[data-progress="86"]:before {
+  width: 86%;
+}
+.overlay-progress[data-progress="87"]:before {
+  width: 87%;
+}
+.overlay-progress[data-progress="88"]:before {
+  width: 88%;
+}
+.overlay-progress[data-progress="89"]:before {
+  width: 89%;
+}
+.overlay-progress[data-progress="90"]:before {
+  width: 90%;
+}
+.overlay-progress[data-progress="91"]:before {
+  width: 91%;
+}
+.overlay-progress[data-progress="92"]:before {
+  width: 92%;
+}
+.overlay-progress[data-progress="93"]:before {
+  width: 93%;
+}
+.overlay-progress[data-progress="94"]:before {
+  width: 94%;
+}
+.overlay-progress[data-progress="95"]:before {
+  width: 95%;
+}
+.overlay-progress[data-progress="96"]:before {
+  width: 96%;
+}
+.overlay-progress[data-progress="97"]:before {
+  width: 97%;
+}
+.overlay-progress[data-progress="98"]:before {
+  width: 98%;
+}
+.overlay-progress[data-progress="99"]:before {
+  width: 99%;
+}
+.overlay-progress[data-progress="100"]:before {
+  width: 100%;
+}

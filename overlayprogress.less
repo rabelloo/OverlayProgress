@@ -1,0 +1,62 @@
+﻿/*
+    Author: André Luiz Rabêllo
+
+    Overlay progress indicator (centered text)
+*/
+
+// Master element
+.overlay-progress {
+    @height: 20px;
+    @border-radius: 1px;
+    @font-size: 12px;
+    @default-color: #d2d6de;
+    @overlay-color: rgba(0, 0, 0, 0.5);
+    
+    background: @default-color;
+    border-radius: @border-radius;
+    font-size: @font-size;
+    height: @height;
+    line-height: @height;
+    font-weight: 700;
+    position: relative;
+    overflow: hidden;
+
+    &:before {
+        content: "";
+        background: @overlay-color;
+        border-radius: @border-radius;
+        float: left;
+        height: 100%;
+        width: 0;
+        transition: width 0.5s ease 0s;
+    }
+    &:after {
+        content: attr(data-progress) "%";
+        opacity: 0;
+        position: absolute;
+        right: 5px;
+        transition: opacity 0.3s ease 0s;
+    }
+    &:hover:after {
+        opacity: 1;
+    }
+    .description {
+        padding: 0 35px; // Space for percentage display
+        position: absolute;
+        text-align: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 100%;
+    }
+
+    // Width for every progress step
+	@i: 1;
+	.loop (@i) when (@i =< 100) {
+		&[data-progress="@{i}"]:before {
+			width: @i * 1%;
+		}
+		.loop(@i + 1);
+	}
+	.loop(@i);
+}
